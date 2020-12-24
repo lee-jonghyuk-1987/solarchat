@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태양광하는 사람들</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction:column
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left:20px;
+            background-color:tomato;
+            color: yellow;
+            font-size: 3rem;
+        }
+        footer{
+            border-top:1px solid gray;
+            padding:20px;
+            text-align:center;
+
+        }
+        .content{
+            display:flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav, aside{
+            flex-basis: 200px;
+            flex-shrink: 0;
+        }
+        
+        #recchart{
+            text-align: center;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            실시간 REC가격
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>REC 게시판</li>
+                    <li>태양광 뉴스</li>
+                    <li>태양광 자유게시판</li>
+                </ul>
+            </nav>
+            <main>
+                    <div id = recchart style="Z-INDEX: 1; LEFT: 0px; OVERFLOW: hidden; WIDTH: 540px; position: relative; TOP: 0px; HEIGHT: 800px">
+                        <iframe src="http://rec.kmos.kr:8090/trade/sub_page.html" width="1300px" height="1000px">
+                        </iframe>
+                    </div>
+                </p>
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            e-mail : "ballqhf@naver.com"
+        </footer>
+
+    </div>
+</body>
+
+</html>
